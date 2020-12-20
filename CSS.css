@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: roboto, arial, helvetica;
+    font-size: 16px;
+}
+
+
+
+header{
+    background: #474747;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+header img {
+    position: relative;
+    height: 80%;
+    left: 50px;
+    top: 10px;
+}
+
+.top-nav {
+    position: relative;
+    width: 100%;
+    bottom: 45%;
+    text-align: right;
+    height: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav a{
+    text-align: center;
+    margin: 20px;
+    font-weight: 500; 
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.top-nav a:hover {
+    cursor: pointer;
+    background: #4D9737;
+}
+
+.home {
+    background-image: url("./images/Background-Coimbra.png");
+    height: 920px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.home header+div {
+    width: 800px;
+    height: 300px;
+    position: relative;
+    top: 300px;
+    background: rgba(255, 255, 255, 0.87);
+    position:absolute;
+    color: rgb(43, 43, 43);
+}
+
+.home header+div p {
+    position: relative;
+    font-size: 3.5em;
+    font-weight: 200;
+    bottom: 35px;
+    margin-left: 10px;
+    color: #4D9737;
+}
+
+.home header+div h1 {
+    position: relative;
+    bottom: 180px;
+    font-size: 6em;
+    font-weight: 400;
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.home header+div p:last-child  {
+    position: relative;
+    bottom: 325px;
+    left: 650px;
+}
+
+.line {
+    display: inline-block;
+    position: relative;
+    background: #4D9737;
+    bottom: 134px;
+    width: 250px;
+    height: 2.5px;
+    left: 530px;
+}
+
+.line2 {
+    display: inline-block;
+    position: relative;
+    background: #4D9737;
+    left: 10px;
+    bottom: 230px;
+    width: 630px;
+    height: 2.5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    color:rgb(43, 43, 43);
+    margin: 0;
+    padding: 0;
+}
+
+.EBEC-project span {
+    position: relative;
+    left: 800px;
+    display: inline-block;
+    background: #4D9737;
+    width: 300px;
+    height: 2.5px;
+}
+
+.EBEC-project > p {
+    color:rgb(43, 43, 43);
+    font-size: 1.5em;
+    line-height: 1.8;
+    text-align: center;
+    margin: 30px 50px 0 50px;
+}
+
+.case-study-section {
+    width: 50%;
+}
+
+.case-study-section .icon-cs{
+    height: 2.5em;
+    display: inline-block;
+
+}
+
+.case-study-section h3 {
+    text-align: center;
+}
+
+.case-study-section .foto-cs{
+    height: 25em;
+}
