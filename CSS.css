@@ -34,14 +34,13 @@ header img {
     text-align: center;
     margin: 20px;
     font-weight: 500; 
-    padding: 6px;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
+    padding: 7px;
+    transition: color 0.2s ease;
 }
 
 .top-nav a:hover {
     cursor: pointer;
-    background: #4D9737;
+    color: #4D9737;
 }
 
 .home {
@@ -139,8 +138,6 @@ h2 {
 
 .case-study-section .icon-cs{
     height: 2.5em;
-    display: inline-block;
-
 }
 
 .case-study-section h3 {
