@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: roboto, arial, helvetica;
     font-size: 16px;
+    color:rgb(43, 43, 43);
 }
 
 
@@ -35,6 +36,7 @@ header img {
     margin: 20px;
     font-weight: 500; 
     padding: 7px;
+    border-radius: 4px;
     transition: color 0.2s ease;
 }
 
@@ -49,6 +51,7 @@ header img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    margin-bottom: 30px;
 }
 
 .home header+div {
@@ -58,7 +61,6 @@ header img {
     top: 300px;
     background: rgba(255, 255, 255, 0.87);
     position:absolute;
-    color: rgb(43, 43, 43);
 }
 
 .home header+div p {
@@ -110,40 +112,149 @@ h2 {
     text-align: center;
     font-size: 3em;
     font-weight: 500;
-    color:rgb(43, 43, 43);
     margin: 0;
     padding: 0;
 }
 
-.EBEC-project span {
-    position: relative;
-    left: 800px;
-    display: inline-block;
+span {
+    margin: 0 auto;
+    display: block;
     background: #4D9737;
     width: 300px;
-    height: 2.5px;
+    height: 2px;
 }
 
 .EBEC-project > p {
-    color:rgb(43, 43, 43);
     font-size: 1.5em;
     line-height: 1.8;
     text-align: center;
-    margin: 30px 50px 0 50px;
+    margin: 30px 150px;
 }
 
-.case-study-section {
-    width: 50%;
+.cs-td {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em auto;
+    width: 80%;
 }
 
-.case-study-section .icon-cs{
-    height: 2.5em;
-}
-
-.case-study-section h3 {
+.case-study, .team-design {
+    width: 40%;
     text-align: center;
 }
 
-.case-study-section .foto-cs{
-    height: 25em;
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
+
+.cs_icon, .td_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cs_icon img, .td_icon img {
+    height: 3em;
+    margin: 1.5em;
+}
+
+.foto-cs{
+    width: 600px;
+}
+
+.foto-td {
+    width: 630px;
+}
+
+.cs-td p{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.EBEC-project span:nth-child(2) {
+    width: 2px;
+    height: 670px;
+}
+
+.EBEC-trajectory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 100px;;
+    flex-wrap: wrap;
+}
+
+.EBEC-trajectory p {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 70%;
+}
+
+.local-rounds span {
+    width: 330px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.map img {
+    height: 700px;
+    margin: 50px 10px 50px 270px;
+}
+
+.map ul {
+    list-style: none;
+    position: absolute;
+}
+
+.map ul li a{
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color:rgb(43, 43, 43);
+    padding: 3px;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: linear color 0.1s;
+}
+
+.map ul li a:hover {
+    color:  #4D9737;
+}
+
+.map ul li .porto {
+    bottom: 193px;
+    right: 305px; 
+}
+
+.map ul li .aveiro {
+    bottom: 108px;
+    right: 315px;
+}
+
+.map ul li .coimbra {
+    bottom: 15px;
+    right: 335px;
+}
+
+.map ul li .lisboa {
+    top: 50px;
+    right: 315px
+}
+
+.map ul li .almada {
+    top: 135px;
+    right: 325px;
+}
+
