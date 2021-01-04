@@ -1,43 +1,44 @@
 body {
     margin: 0;
     font-family: roboto, arial, helvetica;
-    font-size: 16px;
     color:rgb(43, 43, 43);
 }
 
-
+#content {
+    width: clamp(0px, 80%, 1250px);
+    margin: 0 auto;
+}
 
 header{
     background: #474747;
-    position: absolute;
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header img {
-    position: relative;
-    height: 80%;
-    left: 50px;
-    top: 10px;
+    height: clamp(50px, 5vw, 70px);
+    z-index: 2;
+    margin-left: clamp(5px, 1.5vw, 30px);
 }
 
 .top-nav {
-    position: relative;
-    width: 100%;
-    bottom: 45%;
+    width: 90%;
     text-align: right;
-    height: 50%;
     color: white;
     text-decoration: none;
 }
 
 .top-nav a{
     text-align: center;
-    margin: 20px;
+    margin: clamp(5px, 1vw, 18px);
+    font-size: clamp(10px, 0.8vw, 14px);
     font-weight: 500; 
     padding: 7px;
     border-radius: 4px;
-    transition: color 0.2s ease;
+    text-transform: uppercase;
 }
 
 .top-nav a:hover {
@@ -47,88 +48,103 @@ header img {
 
 .home {
     background-image: url("./images/Background-Coimbra.png");
-    height: 920px;
+    width: 100%;
+    height: calc(100vh - 100px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    margin-bottom: 30px;
+    margin: 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.home header+div {
-    width: 800px;
-    height: 300px;
-    position: relative;
-    top: 300px;
-    background: rgba(255, 255, 255, 0.87);
-    position:absolute;
+.div-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: clamp(250px, 45vw, 750px);
+    height: clamp(88.8px, 16vw, 266.6px);
+    background: rgba(218, 218, 218, 0.87);
 }
 
-.home header+div p {
-    position: relative;
-    font-size: 3.5em;
-    font-weight: 200;
-    bottom: 35px;
-    margin-left: 10px;
+.header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-header p {
+    font-size: clamp(18px, 3vw, 3vw);
+    font-weight: 300;
     color: #4D9737;
+    margin: 0;
 }
 
-.home header+div h1 {
-    position: relative;
-    bottom: 180px;
-    font-size: 6em;
+.header1 span {
+    display: inline-block;
+    background: #4D9737;
+    width: clamp(68px, 15vw, 15vw);
+    height: 0.12vw;
+    margin: 0;
+}
+
+.div-header h1 {
+    font-size: clamp(32px, 5.7vw, 5.7vw);
     font-weight: 400;
     text-align: center;
-    
     text-transform: uppercase;
+    margin: 0;
 }
 
-.home header+div p:last-child  {
-    position: relative;
-    bottom: 325px;
-    left: 650px;
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.line {
+.header2 span {
     display: inline-block;
-    position: relative;
     background: #4D9737;
-    bottom: 134px;
-    width: 250px;
-    height: 2.5px;
-    left: 530px;
-}
-
-.line2 {
-    display: inline-block;
-    position: relative;
-    background: #4D9737;
-    left: 10px;
-    bottom: 230px;
-    width: 630px;
-    height: 2.5px;
+    width: clamp(185px, 35vw, 35vw);
+    height: 0.15625vw;
+    margin: 0;
 }
 
 h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 500;
     margin: 0;
     padding: 0;
 }
 
 span {
-    margin: 0 auto;
+    margin: 3px auto;
     display: block;
     background: #4D9737;
-    width: 300px;
+    width: 200px;
     height: 2px;
 }
 
 .EBEC-project > p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.8;
     text-align: center;
-    margin: 30px 150px;
+    margin: 30px 0px;
+}
+
+.cs_icon, .td_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.7em;
+    
+}
+
+.cs_icon img, .td_icon img {
+    height: 3em;
+    margin: 1em;
 }
 
 .cs-td {
@@ -136,95 +152,88 @@ span {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 1em auto;
-    width: 80%;
+    width: 100%;
 }
 
-.case-study, .team-design {
-    width: 40%;
+.case-study, .team-design, .case-study>img, .team-design>img{
+    width: 500px;
     text-align: center;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     margin: 0;
     padding: 0;
 }
 
-.cs_icon, .td_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.cs_icon img, .td_icon img {
-    height: 3em;
-    margin: 1.5em;
-}
-
-.foto-cs{
-    width: 600px;
-}
-
-.foto-td {
-    width: 630px;
-}
-
 .cs-td p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 1.5;
 }
 
 .EBEC-project span:nth-child(2) {
     width: 2px;
-    height: 670px;
+    height: 560px;
 }
 
 .EBEC-trajectory {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 150px 100px;;
+    margin: 50px 0px 100px;
     flex-wrap: wrap;
 }
 
+.EBEC-trajectory img {
+    min-width: 250px;
+}
+
 .EBEC-trajectory p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.5;
-    width: 70%;
+    width: 60%;
 }
 
 .local-rounds span {
-    width: 330px;
+    width: 220px;
 }
 
 .map {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: clamp(15px, 1.5vw, 50px) 0px;
+    height: clamp(400px, 45vw, 650px);
+}
 
+.map picture {
+    height: 100%;
 }
 
 .map img {
-    height: 700px;
-    margin: 50px 10px 50px 270px;
+    height: 100%;
+    margin-left: 10px;
 }
 
 .map ul {
     list-style: none;
-    position: absolute;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 72%;
+    margin-bottom: 4.6vw;
 }
 
 .map ul li a{
-    position: relative;
     text-decoration: none;
     display: inline-block;
     color:rgb(43, 43, 43);
     padding: 3px;
-    font-size: 1.5em;
+    font-size: clamp(12px, 1.5vw, 24px);
     font-weight: 500;
     transition: linear color 0.1s;
 }
@@ -234,27 +243,285 @@ h3 {
 }
 
 .map ul li .porto {
-    bottom: 193px;
-    right: 305px; 
+    bottom: 158px;
 }
 
 .map ul li .aveiro {
-    bottom: 108px;
-    right: 315px;
+    bottom: 89px;
 }
 
 .map ul li .coimbra {
-    bottom: 15px;
-    right: 335px;
+    bottom: 13px;
 }
 
 .map ul li .lisboa {
-    top: 50px;
-    right: 315px
+    top: 36px;
 }
 
 .map ul li .almada {
-    top: 135px;
-    right: 325px;
+    top: 105px;
 }
 
+.schedule_survival-guide span {
+    width: 480px;
+}
+
+.schedule_survival-guide{
+    text-align: center;
+}
+
+.schedule_survival-guide p {
+    font-size: 1.2em;
+    margin: 30px 0px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.schedule_survival-guide a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 0 auto 50px;
+    width: clamp(180px, 30%, 30%);
+    background-color:rgb(80, 80, 80);
+    color: white;
+    border-radius: 4px;
+}
+
+.schedule_survival-guide a:hover {
+    color: #4D9737;
+}
+
+.schedule_survival-guide img {
+    margin-top: 30px;
+    height: 600px;
+}
+
+.location span {
+    width: 180px;
+}
+
+.location iframe {
+    margin: 60px 9.5%;
+    left: 200px;
+    width: 80%;
+}
+
+.participants span{
+    width: 200px;
+}
+
+.participants .cs-td span {
+    margin: 40px 0;
+    width: 2px;
+    height: 670px;
+}
+
+.lives span{
+    width: 310px;
+}
+
+.lives .lives-div{
+    height: 500px;
+    background-color:rgb(43, 43, 43);
+    width: 80%;
+    margin: 50px auto;
+}
+
+.partners span {
+    width: 140px;
+}
+
+.partners-div {
+    height: 500px;
+    background-color:rgb(43, 43, 43);
+    width: 80%;
+    margin: 50px auto;
+}
+
+.universities  span{
+    width: 370px;
+}
+
+.universities a img {
+    height: clamp(50px, 5vw, 90px);
+    margin: 20px;
+    min-width: 10px;
+}
+
+.universities-div {
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.organizers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.span-organizers {
+    width: 180px;
+}
+
+.organizer img {
+    height: 20px;
+}
+
+.organizer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.organizer h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.organizer h5 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 15px 0 0 5px;
+}
+
+.organizer > img {
+    padding: 120px;
+    border: solid 1px rgb(65, 65, 65);
+    border-radius: 50%;
+}
+
+.organizer .email {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    width: 200px;
+}
+
+.organizer .ig-lkd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+    margin: 5px;
+}
+
+.topic-responsible {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topic-responsible h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#topic-responsible2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    background:rgb(43, 43, 43);
+    width: 100%;
+    height: 100px;
+    color: rgb(219, 219, 219);
+}
+
+footer p {
+    margin: auto auto;
+}
+
+
+@media (max-width: 1270px) {
+    .EBEC-project span:nth-child(2){
+        position:absolute;
+        width: 0;
+        height: 0;
+    }
+
+    .EBEC-trajectory {
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+    .EBEC-trajectory p {
+        margin-bottom: 5vw;
+        width: 85%;
+    }
+
+    .participants span:nth-child(2){
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+}
+
+@media (max-width: 930px) {
+    .top-nav a {
+        margin: 5px;
+    }
+
+    .map ul {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 835px) {
+    .top-nav a {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+    .case-study>img, .team-design>img {
+        width: 80vw;
+    }
+
+    .EBEC-trajectory img {
+        width: 60vw;
+    }
+
+    .schedule_survival-guide span {
+        width: 260px;
+    }
+
+    .schedule_survival-guide img {
+        height: 100vw;
+    }
+
+    .location iframe{
+        height: 100vw;
+    }
+}
+
+@media (max-width: 470px) {
+    .universities span {
+        width: 210px;
+    }
+}
+
+@media (max-width: 405px) {
+    .lives span {
+        width: 240px;
+    }
+}

@@ -7,229 +7,316 @@
     <link rel="stylesheet" href="./CSS.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src= "./JavaScript/Estudos.js"></script>
 </head>
 <body>
-    <section class="home">
-        <header>
-            <img src="./images/logo-EBEC-Branco.png" alt="EBEC Portugal Logo">
-            <div class="top-nav">
-                <a>Rondas Locais</a>
-                <a>Horários / Guia de Sobrevivência</a>
-                <a>Localização</a>
-                <a>Participantes</a>
-                <a>Transmissões</a>
-                <a>Organização</a>
-            </div>
-        </header>
+    <header>
+        <picture>
+            <source srcset="./images/Logo-EBEC-Branco-reduzida.svg" media="(max-width: 1190px)">
+            <img src="./images/logo-EBEC-Branco.png" alt="EBEC Portugal Logo">   
+        </picture>
+        <div class="top-nav">
+            <a>Home</a>
+            <a>Rondas Locais</a>
+            <a>Horários / Guia de Sobrevivência</a>
+            <a>Localização</a>
+            <a>Participantes</a>
+            <a>Transmissões</a>
+            <a>Organização</a>
+        </div>
+    </header>
 
+    <section class="home">
         <div class="div-header">
-            <p>Investe no teu futuro</p>
-            <span class="line"></span>
+            <div class="header1">
+                <p>Investe no teu futuro</p>
+                <span></span>
+            </div>
+
             <h1>EBEC Portugal</h1>
-            <span class="line2"></span>
-            <p>2021</p>
+
+            <div class="header2">
+                <span></span>
+                <p>2021</p>
+            </div>
         </div>
     </section>
 
-    <section class="EBEC-project">
-        <span></span>
-        <h2>Projeto EBEC</h2>
-        <span></span>
-        <p>
-            A EBEC (European BEST Engineering Competition) é uma competição de engenharia europeia, que proporciona aos estudantes a oportunidade de desenvolver trabalho em equipa e testar a sua criatividade e adaptabilidade, através da resolução de um problema de uma das duas categorias: <strong>Case Study</strong> e <strong>Team Design</strong>.
-        </p>
-        <div class="cs-td">
-            <section class="case-study">
-                <div class="cs_icon">
-                    <img src="./icons/case-study-icon.svg" alt="Ícone do Case Study">
-                    <h3>Case Study</h3>
-                </div>
-                <img src="./images/case-study.jpg" alt="Imagem representativa do Case Study" class="foto-cs">
-                <p>
-                    Consiste em encontrar uma solução para um problema de tecnologia pela elaboração de uma possí­vel estratégia de combate ao problema abordado, num prazo de tempo de 24H.
-                </p>
-            </section>
+    <section id="content">
+        <section class="EBEC-project">
+            <span></span>
+            <h2>Projeto EBEC</h2>
+            <span></span>
+            <p>
+                A EBEC (European BEST Engineering Competition) é uma competição de engenharia europeia, que proporciona aos estudantes a oportunidade de desenvolver trabalho em equipa e testar a sua criatividade e adaptabilidade, através da resolução de um problema de uma das duas categorias: <strong>Case Study</strong> e <strong>Team Design</strong>.
+            </p>
+            <div class="cs-td">
+                <section class="case-study">
+                    <div class="cs_icon">
+                        <img src="./icons/case-study-icon.svg" alt="Ícone do Case Study">
+                        <h3>Case Study</h3>
+                    </div>
+                    <img src="./images/case-study.jpg" alt="Imagem representativa do Case Study" class="foto-cs">
+                    <p>
+                        Consiste em encontrar uma solução para um problema de tecnologia pela elaboração de uma possí­vel estratégia de combate ao problema abordado, num prazo de tempo de 24H.
+                    </p>
+                </section>
 
+                <span></span>
+
+                <section class="team-design">
+                    <div class="td_icon">
+                        <img src="./icons/Team-Design-icon.svg" alt="Ícone do Team Design">
+                        <h3>Team Design</h3>
+                    </div>
+                    <img src="./images/Team-Design.jpg" alt="Imagem representativa do Team Design" class="foto-td">
+                    <p>
+                        Consiste em resolver, projectar, e construir, um protótipo criativo e funcional, dentro de um prazo de tempo de 24H e com um limite de materiais disponibilizados.
+                    </p>
+                </section>
+            </div>
+            <section class="EBEC-trajectory">
+                <p>
+                    A EBEC Portugal é a segunda fase da competição, onde os vencedores das rondas locais (Almada, Aveiro, Coimbra, Lisboa e Porto) competirão entre si e onde serão apuradas as duas equipas vencedoras que representarão Portugal na fase final da competição, que será realizada em Madrid, Espanha no mês de julho de 2021. Esta é a 12ª edição da EBEC Portugal, realizar-se-á  na Universidade de Coimbra, de xx a xx de abril de 2021.
+                </p>
+                <img src="./images/Pirâmide-EBEC.png" alt="Pirâmide do percurso EBEC">
+            </section>
+        </section>
+
+        <section class="local-rounds">
+            <span></span>
+            <h2>Rondas Locais</h2>
+            <span></span>
+            <div class="map">
+                <ul>
+                    <li><a href="#" class="porto">EBEC Porto</a></li>
+                    <li><a href="http://bestaveiro.web.ua.pt/ebec/" class="aveiro" target="_blank">EBEC Aveiro</a></li>
+                    <li><a href="#" class="coimbra">EBEC Coimbra</a></li>
+                    <li><a href="#" class="lisboa">EBEC Lisboa</a></li>
+                    <li><a href="#" class="almada">EBEC Almada</a></li>
+                </ul>
+                <picture>
+                    <source srcset="./images/Mapa-Portugal-pequeno.svg" media="(max-width: 600px)">
+                    <img src="./images/Mapa-Portugal.png" alt="Mapa de Portugal">
+                </picture>
+            </div>
+        </section>
+
+        <section class="schedule_survival-guide">
+            <span></span>
+            <h2>Horários / Guia de sobrevivência</h2>
+            <span></span>
+            <img src="./images/schedule.png" alt="Horários">
+            <p>
+                O guia de sobrevivência é um arquivo PDF que vai te ajudar a fazer sua experiência em Coimbra incrível, ao te dar dicas de como chegar, o que levar consigo, o que fazer lá e cenas assim. Baixe o arquivo pelo link abaixo 
+            </p>
+            <a href="#">Download do guia de sobrevivência</a>
+        </section>
+
+        <section class="location">
+            <span></span>
+            <h2>Localização</h2>
+            <span></span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0127422136443!2d-8.426116287440767!3d40.20877950217913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f909b72d402f%3A0x2c4969e6ec176a72!2sUniversidade%20de%20Coimbra!5e0!3m2!1spt-PT!2spt!4v1608592120503!5m2!1spt-PT!2spt" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+        <section class="participants">
+            <span></span>
+            <h2>Participantes</h2>
             <span></span>
 
-            <section class="team-design">
-                <div class="td_icon">
-                    <img src="./icons/Team-Design-icon.svg" alt="Ícone do Team Design">
-                    <h3>Team Design</h3>
-                </div>
-                <img src="./images/Team-Design.jpg" alt="Imagem representativa do Team Design" class="foto-td">
-                <p>
-                    Consiste em resolver, projectar, e construir, um protótipo criativo e funcional, dentro de um prazo de tempo de 24H e com um limite de materiais disponibilizados.
-                </p>
+            <div class="cs-td">
+                <section class="case-study">
+                    <div class="cs_icon">
+                        <img src="./icons/case-study-icon.svg" alt="Ícon do Case Study">
+                        <h3 class="cs">Case Study</h3>
+                    </div>
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </section>
+
+                <span></span>
+
+                <section class="team-design">
+                    <div class="td_icon">
+                        <img src="./icons/Team-Design-icon.svg" alt="">
+                        <h3 class="td">Team Design</h3>
+                    </div>
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </section>
             </section>
         </div>
-        <section class="EBEC-trajectory">
-            <p>
-                A EBEC Portugal é a segunda fase da competição, onde os vencedores das rondas locais (Almada, Aveiro, Coimbra, Lisboa e Porto) competirão entre si e onde serão apuradas as duas equipas vencedoras que representarão Portugal na fase final da competição, que será realizada em Madrid, Espanha no mês de julho de 2021. Esta é a 12ª edição da EBEC Portugal, realizar-se-á  na Universidade de Coimbra, de xx a xx de abril de 2021.
-            </p>
-            <img src="./images/piramide.png" alt="Pirâmide do percurso EBEC">
-        </section>
-    </section>
 
-    <section class="local-rounds">
-        <span></span>
-        <h2>Rondas Locais</h2>
-        <span></span>
-        <div class="map">
-            <ul>
-                <li><a href="#" class="porto">EBEC Porto</a></li>
-                <li><a href="#" class="aveiro">EBEC Aveiro</a></li>
-                <li><a href="#" class="coimbra">EBEC Coimbra</a></li>
-                <li><a href="#" class="lisboa">EBEC Lisboa</a></li>
-                <li><a href="#" class="almada">EBEC Almada</a></li>
-            </ul>
+        <section class="lives">
+            <span></span>
+            <h2>Transmissões ao vivo</h2>
+            <span></span>
 
-            <img src="./images/Mapa-Portugal.svg" alt="Mapa de Portugal, com marcação nas cidades correspondentes">
-        </div>
-    </section>
+            <div class="lives-div">
 
-    <section class="schedule/survival-guide">
-        <h2>Horários / Guia de sobrevivência</h2>
-        <img src="#" alt="Horários">
-        <p>
-            O guia de sobrevivência é um arquivo PDF que vai te ajudar a fazer sua experiência em Coimbra incrível, ao te dar dicas de como chegar, o que levar consigo, o que fazer lá e cenas assim. Baixe o arquivo pelo link abaixo 
-        </p>
-        <a href="#">Download do guia de sobrevivência</a>
-    </section>
-
-    <section class="location">
-        <h2>Localização</h2>
-    </section>
-
-    <section class="participants">
-        <h2>Participantes</h2>
-
-        <section class="Case-Study-Participants">
-            <h3 class="cs">Case Study</h3>
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
+            </div>
         </section>
 
-        <section class="Team-Design-Participants">
-            <h3 class="td">Team Design</h3>
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
+        <section class="partners">
+            <span></span>
+            <h2>Parceiros</h2>
+            <span></span>
+
+            <div class="partners-div">
+
+            </div>
+
         </section>
-    </section>
 
-    <section class="lives">
-        <h2>Transmissões ao vivo</h2>
-    </section>
+        <section class="universities">
+            <span></span>
+            <h2>Universidades envolvidas</h2>
+            <span></span>
+            <div class="universities-div">
+                <a href="https://ciencias.ulisboa.pt/" target="_blank"><img src="./university-logos/ciencias_ULisboa-logo.png" alt="Faculdade de Ciências ULisboa"></a>
+                <a href="https://www.fct.unl.pt/" target="_blank"><img src="./university-logos/fct-logo.jpg" alt="FCT"></a>
+                <a href="https://www.uc.pt/fctuc" target="_blank"><img src="./university-logos/fctuc-logo.png" alt="FCTUC"></a>
+                <a href="https://sigarra.up.pt/fcup/pt/web_page.inicial" target="_blank"><img src="./university-logos/fcup-logo.png" alt="FCUP"></a>
+                <a href="https://sigarra.up.pt/feup/pt/web_page.inicial" target="_blank"><img src="./university-logos/FEUP-logo.png" alt="FEUP"></a>
+                <a href="https://tecnico.ulisboa.pt/pt/" target="_blank"><img src="./university-logos/ift-logo.jpg" alt="IFT"></a>
+                <a href="https://www.ua.pt/" target="_blank"><img src="./university-logos/universidade-aveiro-logo.jpg" alt="Universidade de Aveiro"></a>
+            </div>
+        </section>
 
-    <section class="partners">
-        <h2>Parceiros</h2>
-
-    </section>
-
-    <section class="universities">
-        <h2>Universidades envolvidas</h2>
-
-        <img src="./university-logos/ciencias_ULisboa-logo.png" alt="Faculdade de Ciências ULisboa">
-        <img src="./university-logos/fct-logo.jpg" alt="FCT">
-        <img src="./university-logos/fctuc-logo.png" alt="FCTUC">
-        <img src="./university-logos/fcup-logo.png" alt="FCUP">
-        <img src="./university-logos/FEUP-logo.png" alt="FEUP">
-        <img src="./university-logos/ift-logo.jpg" alt="IFT">
-        <img src="./university-logos/universidade-aveiro-logo.jpg" alt="Universidade de Aveiro">
-    </section>
-
-    <section class="organizers">
+        <span class="span-organizers"></span>
         <h2>Organização</h2>
+        <span class="span-organizers"></span>
 
-        <section class="coordinator">
-            <h4>Coordenador</h4>
-            <img src="#" alt="Foto">
+        <section class="organizers">
+            
 
-            <h4>Miguel Barreira</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>miguel.barreira@best-eu.org</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
+            <section class="coordinator organizer">
+                <h4>Coordenador</h4>
+                <img src="#" alt="Foto" class="foto">
+
+                <h5>Miguel Barreira</h5>
+                <div class="email">
+                    <img src="./icons/email-icon.svg" alt="ícone do email">
+                    <p>miguel.barreira@best-eu.org</p>
+                </div>
+                <div class="ig-lkd">
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                    <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+                
+            </section>
+
+            <section class="secretary organizer">
+                <h4>Secretária</h4>
+                <img src="#" alt="Foto" class="foto">
+
+                <h5>Ana Antunes</h5>
+                <div class="email">
+                    <img src="./icons/email-icon.svg" alt="ícone do email">
+                    <p>ana8catarina@gmail.com</p>
+                </div>
+                <div class="ig-lkd">
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                    <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+            </section>
+
+            <section class="CR-responsible organizer">
+                <h4>Responsável por 
+                    Relações Corporativas</h4>
+                <img src="#" alt="Foto" class="foto">
+
+                <h5>Guilherme Fernandes</h5>
+                <div class="email">
+                    <img src="./icons/email-icon.svg" alt="ícone do email">
+                    <p>ga.fernandes@campus.fct.unl.pt</p>
+                </div>
+                <div class="ig-lkd">
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                    <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+            </section>
+
+            <section class="design-responsible organizer">
+                <h4>Responsável pelo Design</h4>
+                <img src="#" alt="Foto" class="foto">
+
+                <h5>XXXXXXXXXXXXXXXXXXXXXXXXXXX</h4>
+                <div class="email">
+                    <img src="./icons/email-icon.svg" alt="ícone do email">
+                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+                <div class="ig-lkd">
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                    <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+            </section>
+
+            <section class="IT-responsible organizer">
+                <h4>Responsável por IT</h4>
+                <img src="#" alt="Foto" class="foto">
+
+                <h5>Vitor Moreira</h5>
+                <div class="email">
+                    <img src="./icons/email-icon.svg" alt="ícone do email">
+                    <p>vitor.alvesmoreira1@gmail.com</p>
+                </div>
+                <div class="ig-lkd">
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                    <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+            </section>
+
+            <section class="PR-responsible organizer">
+                <h4>Responsável por Relações Públicas</h4>
+                <img src="#" alt="Foto" class="foto">
+
+                <h5>Maria Alves</h5>
+                <div class="email">
+                    <img src="./icons/email-icon.svg" alt="ícone do email">
+                    <p>mig.alves@campus.fct.unl.pt</p>
+                </div>
+                <div class="ig-lkd">
+                    <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                    <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                </div>
+            </section>
+            <section class="topic-responsible">
+                <h4>Responsáveis pelos Tópicos</h4>
+                <div id="topic-responsible2">
+                    <div class="organizer">
+                        <img src="#" alt="Foto" class="foto">
+
+                        <h5>Isabel Boléo</h5>
+                        <div class="email">
+                            <img src="./icons/email-icon.svg" alt="ícone do email">
+                            <p>i.boleo@campus.fct.unl.pt</p>
+                        </div>
+                        <div class="ig-lkd">
+                            <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                            <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <img src="#" alt="Foto" class="foto">
+
+                        <h5>Bernardo Martins</h5>
+                        <div class="email">
+                            <img src="./icons/email-icon.svg" alt="ícone do email">
+                            <p>bme.martins@campus.fct.unl.pt</p>
+                        </div>
+                        <div class="ig-lkd">
+                            <a href="#"><img src="./icons/instagram-icon.svg" alt="Ícone do instagram"></a>
+                            <a href="#"><img src="./icons/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-
-        <section class="secretary">
-            <h4>Secretária</h4>
-            <img src="#" alt="Foto">
-
-            <h4>Ana Antunes</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>ana8catarina@gmail.com</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-        </section>
-
-        <section class="CR-responsible">
-            <h4>Responsável por 
-                Relações Corporativas</h4>
-            <img src="#" alt="Foto">
-
-            <h4>Guilherme Fernandes</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>ga.fernandes@campus.fct.unl.pt</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-        </section>
-
-        <section class="design-responsible">
-            <h4>Responsável pelo Design</h4>
-            <img src="#" alt="Foto">
-
-            <h4>XXXXXXXXXXXXXXXXXXXXXXXXXXX</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-        </section>
-
-        <section class="IT-responsible">
-            <h4>Responsável por IT</h4>
-            <img src="#" alt="Foto">
-
-            <h4>Vitor Moreira</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>vitor.alvesmoreira1@gmail.com</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-        </section>
-
-        <section class="PR-responsible">
-            <h4>Responsável por Relações Públicas</h4>
-            <img src="#" alt="Foto">
-
-            <h4>Maria Alves</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>mig.alves@campus.fct.unl.pt</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-        </section>
-
-        <section class="topic-responsible">
-            <h4>Responsáveis pelos Tópicos</h4>
-            <img src="#" alt="Foto">
-
-            <h4>Isabel Boléo</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>i.boleo@campus.fct.unl.pt</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-
-            <img src="#" alt="Foto">
-
-            <h4>Bernardo Martins</h4>
-            <img src="./icons/email-icon.svg" alt="ícone do email">
-            <p>bme.martins@campus.fct.unl.pt</p>
-            <img src="#" alt="Ícone do instagram">
-            <img src="#" alt="Ícone do LinkedIn">
-        </section>
+    </section>
 
     <footer>
         <p>Copyright EBEC PT 2021</p>
