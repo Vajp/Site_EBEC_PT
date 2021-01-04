@@ -32,6 +32,7 @@ header img {
 }
 
 .top-nav a{
+    border: 1px solid transparent;
     text-align: center;
     margin: clamp(5px, 1vw, 18px);
     font-size: clamp(10px, 0.8vw, 14px);
@@ -39,11 +40,12 @@ header img {
     padding: 7px;
     border-radius: 4px;
     text-transform: uppercase;
+    transition: border 0.3s ease;
 }
 
 .top-nav a:hover {
     cursor: pointer;
-    color: #4D9737;
+    border: 1px solid white;
 }
 
 .home {
