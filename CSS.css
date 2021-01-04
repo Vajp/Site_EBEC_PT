@@ -278,6 +278,7 @@ h3 {
 }
 
 .schedule_survival-guide a {
+    border: 2px solid transparent;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -286,10 +287,14 @@ h3 {
     background-color:rgb(80, 80, 80);
     color: white;
     border-radius: 4px;
+    transition: background-color linear 0.5s;
+    transition: color 0.3s ease-in-out;
 }
 
 .schedule_survival-guide a:hover {
-    color: #4D9737;
+    color:rgb(80, 80, 80);
+    background-color: transparent;
+    border: 2px solid rgb(80, 80, 80);
 }
 
 .schedule_survival-guide img {
@@ -430,7 +435,7 @@ h3 {
 
 #topic-responsible2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
