@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: roboto, arial, helvetica;
@@ -24,14 +28,14 @@ header img {
     margin-left: clamp(5px, 1.5vw, 30px);
 }
 
-.top-nav {
+#top-nav {
     width: 90%;
     text-align: right;
-    color: white;
-    text-decoration: none;
 }
 
-.top-nav a{
+#top-nav a{
+    color: white;
+    text-decoration: none;
     border: 1px solid transparent;
     text-align: center;
     margin: clamp(5px, 1vw, 18px);
@@ -43,7 +47,7 @@ header img {
     transition: border 0.3s ease;
 }
 
-.top-nav a:hover {
+#top-nav a:hover {
     cursor: pointer;
     border: 1px solid white;
 }
@@ -54,7 +58,7 @@ header img {
     height: calc(100vh - 100px);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position:#top;
     margin: 0px 0px 30px;
     display: flex;
     flex-direction: column;
@@ -199,7 +203,7 @@ h3 {
     width: 60%;
 }
 
-.local-rounds span {
+#local-rounds span {
     width: 220px;
 }
 
@@ -257,29 +261,29 @@ h3 {
 }
 
 .map ul li .lisboa {
-    top: 36px;
+#top: 36px;
 }
 
 .map ul li .almada {
-    top: 105px;
+#top: 105px;
 }
 
-.schedule_survival-guide span {
+#schedule_survival-guide span {
     width: 480px;
 }
 
-.schedule_survival-guide{
+#schedule_survival-guide{
     text-align: center;
 }
 
-.schedule_survival-guide p {
+#schedule_survival-guide p {
     font-size: 1.2em;
     margin: 30px 0px;
     font-weight: 400;
     line-height: 1.5;
 }
 
-.schedule_survival-guide a {
+#schedule_survival-guide a {
     border: 2px solid transparent;
     text-decoration: none;
     display: block;
@@ -293,49 +297,49 @@ h3 {
     transition: color 0.3s ease-in-out;
 }
 
-.schedule_survival-guide a:hover {
+#schedule_survival-guide a:hover {
     color:rgb(80, 80, 80);
     background-color: transparent;
     border: 2px solid rgb(80, 80, 80);
 }
 
-.schedule_survival-guide img {
-    margin-top: 30px;
+#schedule_survival-guide img {
+    margin#top: 30px;
     height: 600px;
 }
 
-.location span {
+#location span {
     width: 180px;
 }
 
-.location iframe {
+#location iframe {
     margin: 60px 9.5%;
     left: 200px;
     width: 80%;
 }
 
-.participants span{
+#participants span{
     width: 200px;
 }
 
-.participants .cs-td span {
+#participants .cs-td span {
     margin: 40px 0;
     width: 2px;
     height: 670px;
 }
 
-.lives span{
+#lives span{
     width: 310px;
 }
 
-.lives .lives-div{
+#lives .lives-div{
     height: 500px;
     background-color:rgb(43, 43, 43);
     width: 80%;
     margin: 50px auto;
 }
 
-.partners span {
+#partners span {
     width: 140px;
 }
 
@@ -346,11 +350,11 @@ h3 {
     margin: 50px auto;
 }
 
-.universities  span{
+#universities  span{
     width: 370px;
 }
 
-.universities a img {
+#universities a img {
     height: clamp(50px, 5vw, 90px);
     margin: 20px;
     min-width: 10px;
@@ -363,6 +367,10 @@ h3 {
     justify-content: space-around;
 }
 
+#span-organizers {
+    width: 180px;
+}
+
 .organizers {
     display: flex;
     justify-content: space-around;
@@ -370,10 +378,6 @@ h3 {
     justify-content: center;
     align-items: center;
 
-}
-
-.span-organizers {
-    width: 180px;
 }
 
 .organizer img {
@@ -474,7 +478,7 @@ footer p {
         width: 85%;
     }
 
-    .participants span:nth-child(2){
+    #participants span:nth-child(2){
         width: 0;
         height: 0;
         position: absolute;
@@ -482,7 +486,7 @@ footer p {
 }
 
 @media (max-width: 930px) {
-    .top-nav a {
+    #top-nav a {
         margin: 5px;
     }
 
@@ -492,7 +496,7 @@ footer p {
 }
 
 @media (max-width: 835px) {
-    .top-nav a {
+    #top-nav a {
         width: 0;
         height: 0;
         visibility: hidden;
@@ -508,27 +512,27 @@ footer p {
         width: 60vw;
     }
 
-    .schedule_survival-guide span {
+    #schedule_survival-guide span {
         width: 260px;
     }
 
-    .schedule_survival-guide img {
+    #schedule_survival-guide img {
         height: 100vw;
     }
 
-    .location iframe{
+    #location iframe{
         height: 100vw;
     }
 }
 
 @media (max-width: 470px) {
-    .universities span {
+    #universities span {
         width: 210px;
     }
 }
 
 @media (max-width: 405px) {
-    .lives span {
+    #lives span {
         width: 240px;
     }
 }
